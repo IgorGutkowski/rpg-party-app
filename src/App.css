@@ -1,38 +1,125 @@
-.App {
+/* src/styles.css */
+
+/* Common styles for all themes */
+body {
+  font-family: 'Merienda', cursive; /* Choose a fantasy-style font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background: linear-gradient(to right bottom, #4a0000, #1a1a1a); /* Dark red to black gradient */
+  color: #c9c9c9;
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 20px;
+  color: #ff6666; /* Light red color for headings */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #660000; /* Dark red color for buttons */
+  color: #c9c9c9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #990000; /* Darker red on hover */
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  border: 1px solid #660000;
+  border-radius: 5px;
+  background-color: rgba(102, 0, 0, 0.5); /* Semi-transparent dark red */
+  color: #c9c9c9;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+input:hover,
+input:focus {
+  border-color: #990000;
+  background-color: rgba(102, 0, 0, 0.7); /* Darker semi-transparent red on hover/focus */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+.dice-buttons {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+
+.result {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #ff6666; /* Light red color for results */
+}
+
+.player-container {
+  border: 1px solid #660000;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  background: rgba(102, 0, 0, 0.7); /* Semi-transparent dark red background */
+  color: #c9c9c9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.player-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.player-header h3 {
+  color: #ff6666; /* Light red color for player names */
+}
+
+.player-header button {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #660000; /* Dark red color for buttons */
+  color: #c9c9c9;
+}
+
+.player-header button:hover {
+  background-color: #990000; /* Darker red on hover */
+}
+
+.party-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Recent result */
+.newest-result {
+  font-size: 1.2em;
+  color: #ff6666; /* Light red color */
+  font-weight: bold;
 }
