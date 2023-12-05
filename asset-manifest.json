@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rpg-party-app/static/css/main.292aaa0b.css",
+    "main.js": "/rpg-party-app/static/js/main.37040c1c.js",
+    "index.html": "/rpg-party-app/index.html",
+    "main.292aaa0b.css.map": "/rpg-party-app/static/css/main.292aaa0b.css.map",
+    "main.37040c1c.js.map": "/rpg-party-app/static/js/main.37040c1c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.292aaa0b.css",
+    "static/js/main.37040c1c.js"
+  ]
+}
